@@ -10,7 +10,9 @@ outputs:
   time: # id of output
     description: 'The time we greeted you'
 runs:
-  using: "composite"
-  steps: 
-    - run: cat ~/.docker/config.json
-      shell: sh
+#  using: "composite"
+#  steps: 
+#    - run: cat ~/.docker/config.json
+#      shell: sh
+  using: docker
+  image: Dockerfile
